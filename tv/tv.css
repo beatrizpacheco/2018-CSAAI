@@ -1,0 +1,131 @@
+body{
+	background-image:url(./fondo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+@font-face {
+  font-family: controls;
+  src: url("controls.ttf");
+}
+
+@font-face {
+  font-family: dig;
+}
+
+@font-face {
+  font-family: led;
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+  color: black;
+  font-weight: normal;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  font-weight: normal;
+  margin-top: 1%;
+  margin-bottom: 0%;
+}
+
+h3 {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  font-weight: normal;
+  margin-top: 1%;
+  margin-bottom: 0%;
+}
+
+canvas {
+    padding-center: 0;
+    padding-right: 0;
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#cuadro {
+  text-align: center;
+  background-color: LightGray ;
+  width: 50%;
+  height: 75%;
+  padding-center: 0;
+  padding-right: 0;
+  margin-top: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#video-controls {
+  text-align: center;
+}
+
+#play-pause {
+  font-size: 50px;
+  font-family: controls;
+  color: black;
+  font-size: 20px;
+  padding: 7px 20px 10px 20px;
+  border: solid grey 6px;
+  cursor:pointer; cursor: hand;
+  text-decoration: none;
+}
+
+#time-bar {
+  margin-top: 1%;
+  width: 250px;
+  height: 3px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000;
+  background: grey;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+
+#mute {
+  font-size: 50px;
+  font-family: controls;
+  color: black;
+  font-size: 20px;
+  padding: 7px 20px 10px 20px;
+  border: solid grey 6px;
+  cursor:pointer; cursor: hand;
+  text-decoration: none;
+}
+
+#volume-bar {
+  margin-top: 1%;
+  width: 50px;
+  height: 3px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000;
+  background: grey;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+
+#text1 {
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+#cameras {
+  text-align: center;
+}

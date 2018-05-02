@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Realizador de TV</title>
+    <script src="tv.js"></script>
+    <link rel="stylesheet" href="tv.css">
+  </head>
+
+  <body onload="main()">
+    <div id="cuadro">
+      <!-- Títulos y cabeceras -->
+      <h1>Realizador de TV</h1>
+      <h3>Beatriz Pacheco</h3>
+      <br>
+      <canvas id="canvas" width="500" height="300"></canvas>
+      <h2 id="Clock">00:00</h2>
+
+      <!-- Video Controls -->
+      <div id="video-controls">
+        <button type="button" id="play-pause" onclick="Play()">P</button>
+        <input type="range" id="time-bar" min="0" max="100" step="1" value="0">
+        <button type="button" id="mute" onclick="Mute()">Q</button>
+        <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+      </div>
+
+      <!-- Selector de videos -->
+      <p id="text1">SELECCIONA LA CAMARA</p>
+      <div id="cameras">
+        <video id = "cam1" type="video/mp4" src="realizador-fuente1.mp4"
+        width="15%" height="15%" muted="true" onclick="ChooseCam(1)"></video>
+        <video id = "cam2" type="video/mp4" src="realizador-fuente2.mp4"
+        width="15%" height="15%" muted="true" onclick="ChooseCam(2)"></video>
+        <video id = "cam3" type="video/mp4" src="realizador-fuente3.mp4"
+        width="15%" height="15%" muted="true" onclick="ChooseCam(3)"></video>
+        <video id = "cam4" type="video/mp4" src="realizador-fuente4.mp4"
+        width="15%" height="15%" muted="true" onclick="ChooseCam(4)"></video>
+      </div>
+    </div>
+  </body>
+</html>

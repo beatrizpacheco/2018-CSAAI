@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pac-man</title>
+        <style>
+            body {
+                /* background-image: url("fondo02.gif"); */
+                height: 100%;
+                /* width: 800px; */
+            }
+            #game{
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 75%;
+                transform: translate(-60%, -60%);
+                z-index: -1;
+            }
+            #slider{
+              z-index: 1;
+            }
+
+            p{
+                position: relative;
+                font-family: italic;
+                margin-left: 0px;
+            }
+            .titulo{
+              display: block;
+              position: fixed;
+              margin-top: 0px;
+              margin-left:0px;
+            }
+            #div1 {
+              width: 110px;
+              height: 110px;
+              padding: 10px;
+              border: 1px solid #aaaaaa;
+            }
+        </style>
+    </head>
+    <body >
+        <div id="slider"></div>
+
+        <div class="mainslider">
+            <p id="timer"> YOUR TIME <span id="counter">0:0:0</span></p>
+            <div class="añadidos">
+              <img id="drag1" draggable="true" ondragstart="drag(event)" src="bluepacman.png" width="100px" height="100px">
+              <img id="drag2" draggable="true" ondragstart="drag(event)" src="greenpacman.png" width="100px" height="100px">
+              <img id="drag3" draggable="true" ondragstart="drag(event)" src="redpacman.png" width="100px" height="100px">
+            </div>
+            <!-- <img id="drag4" draggable="true" ondragstart="drag(event)" src="pacman.png" width="100px" height="100px"> -->
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <img id="drag4" draggable="true" ondragstart="drag(event)" src="yellowpacman.png" width="100px" height="100px">
+            </div>
+            <button type="button" onclick="buttonStart()">Start</button>
+            <button type="button" onclick="buttonPause()">Pause/Restart</button>
+
+            <div id="highscore_local">HIGHSCORE LOCAL: </div>
+            <br>
+            <div id="highscore_sesion">HIGHSCORE SESIÓN: </div>
+        </div>
+
+        <canvas id="game" width="700" height="500"></canvas>
+
+        <script type="text/javascript" src="comecocos.js"></script>
+
+    </body>
+</html>

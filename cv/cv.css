@@ -1,0 +1,86 @@
+
+html, body {
+	margin:0;
+	min-height: 100%;
+}
+
+table, tr, td {
+    border:1px solid black
+}
+
+body {
+	position: relative;
+	background-color:#BBAFF;
+	font-size:16px;
+	line-height:17px;
+	font-weight: normal;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.cabecera_nueva {
+	width: 100%;
+	overflow: hidden;
+	background-color:#B5BAFF;
+	/*clear:both;*/
+}
+.cabecera_nueva a {
+	text-decoration:none;
+}
+.cabecera_nueva .titulo_principal {
+	/*width: 20%;*/
+	padding-left: 1%;
+	padding-right: 1%;
+	float: left;
+
+	/*clear:both;*/
+}
+
+
+.titulo_principal h1 {
+	line-height:2em;
+	margin-top: auto;
+}
+
+#contenedorPlano {
+	background-color: white;
+	padding-top: 20px;
+	/*margin-left: 15%; */
+	/* width:83%; */
+	/*width: 100%;*/
+	/*height: 100%;*/
+	position:relative;
+	float: left;
+
+}
+
+.barraLateral {
+
+	width: 25%;
+	height: 100%;
+	float: left;
+	padding: 1%;
+	padding-left: 1%;
+	/*padding-right:10px;*/
+	background-color: #7F88FF;
+	color: white;
+	/*overflow: hidden;*/
+	clear: both;
+}
+
+#titulo {
+	color: white;
+	width:100%;
+	text-align:center;
+}
+
+#subtitulo {
+	width: 100%;
+	color: white;
+	text-align:left;
+	margin-top: -15px;
+}
+
+a {
+	margin-left: 5px;
+	color: blue;
+}
